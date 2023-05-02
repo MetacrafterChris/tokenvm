@@ -71,8 +71,8 @@ echo "building tokenvm"
 rm -f /tmp/avalanchego-v${VERSION}/plugins/tHBYNu8ikqo4MWMHehC9iKB9mR5tB3DWzbkYmTfe9buWQ5GZ8
 
 # rebuild with latest code
-go build \
--o /tmp/avalanchego-v${VERSION}/plugins/tHBYNu8ikqo4MWMHehC9iKB9mR5tB3DWzbkYmTfe9buWQ5GZ8 \
+go build -buildvcs=false \
+-o  /tmp/avalanchego-v${VERSION}/plugins/tHBYNu8ikqo4MWMHehC9iKB9mR5tB3DWzbkYmTfe9buWQ5GZ8 \
 ./cmd/tokenvm
 
 echo "building token-cli"
